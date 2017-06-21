@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pageback"
+    tools:context="com.example.harsh.rblbankapp.RegLogin.LoginActivity">
+
+    <include layout="@layout/titlebar" />
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip">
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Form"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#8b7878"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/loginTitle"
+            android:layout_marginTop="90dp"
+            android:background="#f9d7d7"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Email"
+                    android:id="@+id/et_email"
+                    android:drawableRight="@drawable/ic_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Password"
+                    android:id="@+id/et_password"
+                    android:drawableRight="@drawable/ic_key"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:text="Login"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_reset_password"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorAccent"
+                android:text="Forgot Password"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorAccent"
+                android:text="Not Registered ? Register Now !"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <ImageView android:background="@drawable/circle_border_filled" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_person" android:contentDescription="@null"
+            android:layout_below="@+id/loginTitle" android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

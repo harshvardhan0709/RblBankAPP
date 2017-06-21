@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageback"
+    tools:context="com.example.harsh.rblbankapp.RegLogin.MainLogRegActivity">
+
+    <include layout="@layout/titlebar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerMainpage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/viewpagerMainpage"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:id="@+id/SignIn"
+            android:text="SignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight=".5"/>
+        <Button
+            android:id="@+id/Register"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+</RelativeLayout>

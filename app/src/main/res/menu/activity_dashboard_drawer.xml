@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_offlinePayment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Offline Payment" />
+        <item
+            android:id="@+id/nav_budgetTrack"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Budget Manager" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_nav_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>
