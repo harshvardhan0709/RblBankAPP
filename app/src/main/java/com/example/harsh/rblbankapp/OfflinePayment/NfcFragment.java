@@ -33,12 +33,12 @@ public class NfcFragment extends Fragment {
 
         View v5 = inflater.inflate(R.layout.fragment_nfc, container, false);
 
-        lineChart = (LineChart)v5.findViewById(R.id.pie_chart);
+        //lineChart = (LineChart)v5.findViewById(R.id.pie_chart);
 
-        float yValues [] = {10, 20, 30, 0, 40, 60};
-        String xValues [] = {"ABC","XYZ","ASD","SDF","DFG","sdfsd"};
+        //float yValues [] = {10, 20, 30, 0, 40, 60};
+        //String xValues [] = {"ABC","XYZ","ASD","SDF","DFG","sdfsd"};
 
-        drawLineChart(yValues,xValues);
+        //drawLineChart(yValues,xValues);
 
         return v5;
     }

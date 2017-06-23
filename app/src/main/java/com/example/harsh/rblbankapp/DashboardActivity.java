@@ -6,11 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -19,13 +16,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.harsh.rblbankapp.BankInfo.BankInformationFrag;
 import com.example.harsh.rblbankapp.BudgetTracker.BudgetDashboardFragment;
 import com.example.harsh.rblbankapp.OfflinePayment.OfflinePaymentFragment;
-import com.example.harsh.rblbankapp.RegLogin.LoginActivity;
+import com.example.harsh.rblbankapp.RegLogin.LoginFragment;
+import com.example.harsh.rblbankapp.RegLogin.MainLogRegActivity;
 import com.example.harsh.rblbankapp.Wallet.WalletDashboardFragment;
 
 public class DashboardActivity extends AppCompatActivity
@@ -43,7 +40,7 @@ public class DashboardActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        sharedpreferences = getSharedPreferences(LoginActivity.MyPREFERENCES, Context.MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(LoginFragment  .MyPREFERENCES, Context.MODE_PRIVATE);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -122,7 +119,7 @@ public class DashboardActivity extends AppCompatActivity
         } else if (id == R.id.nav_logout) {
 
             logout();
-            Intent in = new Intent(DashboardActivity.this, LoginActivity.class);
+            Intent in = new Intent(DashboardActivity.this, MainLogRegActivity.class);
             startActivity(in);
             finish();
 

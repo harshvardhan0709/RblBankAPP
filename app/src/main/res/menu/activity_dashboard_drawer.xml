@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_wallet"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/iconswallet"
             android:title="Wallet" />
         <item
             android:id="@+id/nav_offlinePayment"
@@ -17,7 +17,7 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Notification" />
 
         <item
             android:id="@+id/nav_share"

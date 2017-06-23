@@ -39,8 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegLogin.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".RegLogin.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".RegLogin.MainLogRegActivity"

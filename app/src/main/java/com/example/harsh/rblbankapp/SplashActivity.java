@@ -7,19 +7,22 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
-import com.example.harsh.rblbankapp.RegLogin.LoginActivity;
+import com.example.harsh.rblbankapp.RegLogin.LoginFragment;
 import com.example.harsh.rblbankapp.RegLogin.MainLogRegActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
+    SharedPreferences sharedpreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        sharedpreferences = getSharedPreferences(LoginFragment.MyPREFERENCES, Context.MODE_PRIVATE);
+
 
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         progressBar.setVisibility(progressBar.VISIBLE);
@@ -28,10 +31,26 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                SplashActivity.this.startActivity(new Intent(SplashActivity.this,MainLogRegActivity.class));
-                SplashActivity.this.finish();
+                abc();
             }
         },1000);
+    }
+
+    public void abc()
+    {
+        String s;
+        s=(sharedpreferences.getString(Constants.IS_LOGGED_IN,""));
+        if (s.equals("yes")) {
+            Intent intent = new Intent(this, DashboardActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        else
+        {
+            SplashActivity.this.startActivity(new Intent(SplashActivity.this,MainLogRegActivity.class));
+            SplashActivity.this.finish();
+        }
+
     }
 
 }

@@ -1,0 +1,792 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harsh.rblbankapp.BudgetTracker.Budget_transHistory_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/rectangle_transaction">
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Income"
+                    android:textAlignment="center"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/circle_progress1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/ic_ac_coin_blue"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/ic_ms_suitcase">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="55000 ₹"
+                    android:textAlignment="center"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ahdsj"
+                    android:textAlignment="center"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/circle_progress2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/ic_ac_coin_blue">
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="21dp"
+                        android:background="@drawable/ic_ms_linechart">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ahdsj₹"
+                    android:textAlignment="center"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/rectangle_transaction">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".25">
+
+                <TextView
+                    android:id="@+id/tvWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wallet"
+                    android:textAlignment="center"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/imWallet"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:layout_below="@id/tvWallet"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_ac_coin_yellow">
+
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/ic_ms_cash">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4000 ₹"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/imWallet"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".25">
+
+                <TextView
+                    android:id="@+id/tvBankaccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Account"
+                    android:textAlignment="center"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/imBankaccount"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/ic_ac_coin_yellow"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/tvBankaccount">
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/ic_ms_card">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="45000 ₹"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/imBankaccount" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".25">
+
+                <TextView
+                    android:id="@+id/tvCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:textAlignment="center"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/imCash"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/ic_ac_coin_yellow"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/tvCash">
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/ic_ms_bonus">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4000 ₹"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/imCash"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".25">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/rectangle_transaction">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:id="@+id/tvGroceries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Groceries"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/imGroceries"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:circle_progress="70"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/tvGroceries"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/imGroceries"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:id="@+id/tvClothes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clothes"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/imClothes"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:circle_progress="45"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/tvClothes"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/imClothes"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:id="@+id/tvGasoline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gasoline"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/imGasoline"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:circle_progress="66"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/tvGasoline"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/imGasoline"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:id="@+id/tvRent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rent"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/imRent"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:circle_progress="80"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/tvRent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/imRent"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:id="@+id/tvCommunication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Communications"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/imCommunication"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:circle_progress="60"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/tvCommunication"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/imCommunication"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Food"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/circle_progress10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:circle_progress="30"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Travel"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress11"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="40"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress14"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="20"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress15"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="40"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress20"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="20"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/circle_progress15324"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:circle_progress="60"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".25">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:layout_marginTop="13dp"
+                        android:textSize="12dp"/>
+
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:id="@+id/circle_progress16"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:circle_progress="30"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ahdsj"
+                        android:textAlignment="center"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress17"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="40"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress18"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="20"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress19"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="40"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:layout_marginTop="13dp"
+                            android:textSize="12dp"/>
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress12"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:circle_progress="20"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ahdsj"
+                            android:textAlignment="center"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+</ScrollView>

@@ -7,34 +7,24 @@
     android:background="@color/pageback"
     tools:context="com.example.harsh.rblbankapp.RegLogin.MainLogRegActivity">
 
-    <include layout="@layout/titlebar" />
+    <include layout="@layout/titlebar"
+        android:id="@+id/include" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/offlinetabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:background="@drawable/tabshadow"
+        app:tabSelectedTextColor="#8800a9"
+        app:tabTextAppearance="@style/MyCustomTextAppearance" />
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewpagerMainpage"
+        android:id="@+id/offlineview_pager"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="90dp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/viewpagerMainpage"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        <Button
-            android:id="@+id/SignIn"
-            android:text="SignIn"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_weight=".5"/>
-        <Button
-            android:id="@+id/Register"
-            android:text="Register"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_weight=".5"/>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/offlinetabs"
+        android:background="#fff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
 </RelativeLayout>

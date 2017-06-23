@@ -1,0 +1,105 @@
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harsh.rblbankapp.RegLogin.LoginFragment">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/log"
+        android:layout_marginLeft="25dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/loginTi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back !"
+                android:textSize="28dp"
+                android:textColor="#3d3d3d"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Login to continue"
+                android:textSize="13dp"
+                android:textColor="#4e4e4e"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your UserID"
+                android:textSize="13dp"
+                android:textColor="#4e4e4e"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="5dp"/>
+
+            <EditText
+                    android:hint="xyszs@gmail.com"
+                    android:id="@+id/et_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:drawable/divider_horizontal_dim_dark"/>
+
+            <TextView
+                android:id="@+id/tv_pin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your MPIN"
+                android:textSize="13dp"
+                android:textColor="#4e4e4e"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:hint=". . . ."
+                android:id="@+id/et_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:drawable/divider_horizontal_dim_dark"/>
+
+            <TextView
+                android:id="@+id/tv_reset_password"
+                android:layout_marginTop="10dp"
+                android:textColor="#8900a8"
+                android:text="Forgot MPIN ?"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginRight="5dp"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:text="Login"
+                android:background="@drawable/toolbar_color"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+</FrameLayout>
+</ScrollView>

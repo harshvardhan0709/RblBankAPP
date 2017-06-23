@@ -1,10 +1,132 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.harsh.rblbankapp.OfflinePayment.NfcFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nfc Payment Services"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ad0094"/>
+    </LinearLayout>
 
-    <ScrollView
+    <LinearLayout
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/header"
+            android:id="@+id/Header"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:id="@+id/description"
+            android:layout_below="@+id/Header"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/xyz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/example_message"
+                android:textStyle="bold"
+                android:textColor="#40973d"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/xyz4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Example :"
+                android:textStyle="bold"
+                android:textColor="#40973d"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:id="@+id/xyz1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="pay emailaddress amounttopay"
+                android:textColor="#ca9334"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/xyz2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="pay abc@gmail.com 10"
+                android:textColor="#ca9334"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ndef_text"
+            android:layout_below="@+id/ex"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter code to pay"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/set_ndef_button"
+            android:layout_below="@+id/ndef_text"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Make Payment"
+            android:background="#43a7ba"
+            android:textColor="#e7d508"/>
+    </RelativeLayout>
+    </LinearLayout>
+    <!--<ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
@@ -19,5 +141,6 @@
 
         </LinearLayout>
     </ScrollView>
-
+-->
 </FrameLayout>
+</ScrollView>

@@ -15,14 +15,14 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="#3ea6c2"
+            android:background="@drawable/toolbar_color"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <ImageView
                 android:layout_marginTop="7dp"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:src="@drawable/logo1"/>
+                android:src="@drawable/logo"/>
 
         </android.support.v7.widget.Toolbar>
 
